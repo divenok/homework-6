@@ -2,7 +2,7 @@
   --accent-color: #2196f3;
   --primary-font-family: "Roboto", sans-serif;
   --secondary-font-family: "Raleway", sans-serif;
-  --primary-text-color-theme-dark: #FFFFFF;
+  --primary-text-color-theme-dark: #ffffff;
   --secondary-text-color-theme-dark: rgba(255, 255, 255, 0.6);
   --primary-text-color-theme-light: #212121;
   --secondary-text-color-theme-light: #757575;
@@ -145,10 +145,10 @@ img {
   display: block;
   position: absolute;
   width: 100%;
-  bottom: -34px;;
+  bottom: -34px;
   margin-left: auto;
   margin-right: auto;
-  
+
   height: 4px;
   border-radius: 2px;
 
@@ -354,8 +354,8 @@ img {
 }
 .label-titel {
   margin: 0;
-  font-weight:var(--secondary-font-weight);
- 
+  font-weight: var(--secondary-font-weight);
+
   text-transform: uppercase;
 
   color: var(--primary-text-color-theme-dark);
@@ -474,12 +474,10 @@ img {
 .footer {
   background-color: var(--secondary-background-color);
   padding: 60px 0;
-  
 }
 .footer-container {
-  display: flex; 
+  display: flex;
   align-items: baseline;
-  
 }
 .logo-footer-link {
   margin-top: 0px;
@@ -553,16 +551,19 @@ img {
 /* ====== end footer ====== */
 /* ====== start modal window ====== */
 .backdrop {
-  
   position: fixed;
+
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
+
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transform: scale(1);
-  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), opacity 500ms cubic-bezier(0.4, 0, 0.2, 1), visibility 500ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -571,7 +572,7 @@ img {
   pointer-events: none;
 }
 .modal {
-  position:absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -579,11 +580,11 @@ img {
   height: 581px;
 
   background-color: rgba(255, 255, 255, 1);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-  
-  
+
 .modal-close-btn {
   display: flex;
   justify-content: center;
@@ -600,8 +601,6 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
-  
-  
 
 /*====== end modal window ====== */
 /* ====== end page Студія ====== */
@@ -662,7 +661,6 @@ img {
 .projects-item {
   flex-basis: calc((100% - (3 * 30px)) / 3);
   background: var(--primary-text-color-theme-dark);
-  
 }
 .projects-item-content {
   padding: 20px 24px;
@@ -689,17 +687,16 @@ img {
 .projects-item-link:hover .projects-thumb::after,
 .projects-item-link:focus .projects-thumb::after {
   transform: translateY(0);
-  
 }
 .projects-thumb {
   position: relative;
   overflow: hidden;
 }
-.overlay { 
+.overlay {
   display: flex;
   justify-content: center;
   align-items: center;
-  position:absolute;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -715,13 +712,13 @@ img {
 .description {
   width: 322px;
   margin: 0;
-  
+
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
 
   color: rgba(255, 255, 255, 1);
-}    
+}
 .projects-item-titel {
   margin-bottom: 4px;
   font-family: var(--primary-font-family);
