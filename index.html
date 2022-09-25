@@ -484,33 +484,45 @@
         <form class="contact-form">
           <label class="contact-form-field">
             <span class="content">Ім'я</span>
-            <input
+            <div class="contact-form-input-wrapper"><input
               name="user-name"
               class="contact-form-input"
               type="text"
               required
-              pattern=""
-            />
+              pattern=""/>
+              <svg class="contact-form-input-icon" width="18" height="18">
+                <use href="./img/sprite.svg#person" width="18" height="18"></use>
+              </svg>
+            </div>
+            
           </label>
           <label class="contact-form-field">
             <span class="content">Телефон</span>
-            <input
+            <div class="contact-form-input-wrapper">
+              <input
               name="user-phone"
               class="contact-form-input"
               type="tel"
               required
-              pattern=""
-            />
+              pattern=""/>
+              <svg class="contact-form-input-icon" width="18" height="18">
+                <use href="./img/sprite.svg#phone"></use>
+              </svg>
+            </div>
           </label>
           <label class="contact-form-field">
             <span class="content">Пошта</span>
-            <input
+            <div class="contact-form-input-wrapper">
+              <input
               name="user-email"
               class="contact-form-input"
               type="email"
               required
-              pattern=""
-            />
+              pattern=""/>
+              <svg class="contact-form-input-icon" width="18" height="18">
+                <use href="./img/sprite.svg#email"></use>
+              </svg>
+            </div>
           </label>
           <label class="contact-form-field">
             <span class="content">Коментар</span>
@@ -523,7 +535,7 @@
           <div class="contact-form-checkbox-wrapper">
             <input
               name="accept-policy"
-              type="text"
+              type="checkbox"
               class="contact-form-checkbox"
               required
             />
