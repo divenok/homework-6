@@ -477,7 +477,8 @@ img {
 }
 .footer-container {
   display: flex;
-  align-items: baseline;
+  justify-content: center;
+  align-items: center;
 }
 .logo-footer-link {
   margin-top: 0px;
@@ -513,6 +514,7 @@ img {
 }
 .content-wrapper-footer-associate {
   display: block;
+  margin-right: 93px;
 }
 .social-footer {
   display: flex;
@@ -547,6 +549,33 @@ img {
 }
 .social-list-icon-footer {
   fill: var(--primary-text-color-theme-dark);
+}
+.contact-form {
+  display: inline-block;
+}
+.content-wrapper-footer-subscribe {
+  display: block;
+}
+
+.subscribe {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+.contact-form-field-footer {
+  display: flex;
+  align-items: center;
+}
+.contact-form-input-footer {
+  padding-left: 16px;
+  width: 358px;
+  height: 50px;
+}
+.contact-form-submit-btn-footer {
+  display: inline-block;
+  min-width: 200px;
+  min-height: 50px;
+  text-align: center;
 }
 /* ====== end footer ====== */
 /* ====== start modal window ====== */
@@ -621,14 +650,14 @@ img {
   display: block;
 }
 .contact-form-input {
-  box-sizing: border-box;
-  
   padding-left: 42px;
   width: 100%;
   height: 40px;
   
   border-color: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  
+  cursor: pointer;
 }
 .contact-form-input:focus, .contact-form-message:focus {
   outline: none;
@@ -639,7 +668,7 @@ img {
   width: 22px;
   height: 14px;
   margin-bottom: 4px;
-  
+  padding: 0;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -669,10 +698,12 @@ img {
   height: 120px;
   margin-bottom: 20px;
   padding: 12px 16px;
+
   resize: none;
 
   border-color: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  cursor: pointer;
 }
 .contact-form-message::placeholder {
   font-weight: 400;
@@ -685,6 +716,7 @@ img {
 .contact-form-checkbox-label {
   display: flex;
   align-items: center;
+  margin-bottom: 30px;
 }
 .contact-form-checkbox-label::before {
   content: "";
@@ -697,12 +729,44 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);;
 
   cursor: pointer;
-  }
-  .contact-form-checkbox:checked + .contact-form-checkbox-label::before {
-    background-image: url("../img/check.svg");
-    background-size: cover;
-    background-color: var(--accent-color);
-  }
+}
+.contact-form-checkbox:checked + .contact-form-checkbox-label::before {
+  background-image: url("../img/icon\ check.svg");
+  background-size: cover;
+  background-color: var(--accent-color);
+}
+.contact-form-checkbox:focus + .contact-form-checkbox-label::before {
+  border-color: var(--accent-color);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.terms {
+  text-decoration-skip-ink: none;
+  color: var(--accent-color);
+}
+
+.contact-form-submit-btn {
+  display: block;
+  margin: 0 auto;
+  min-width: 200px;
+    
+  padding: 10px 50px;
+    
+  font-weight: var(--secondary-font-weight);
+  font-size: var(--secondary-font-size);
+  line-height: 1.88;
+  letter-spacing: var(--secondary-letter-spacing);
+  border: 1px solid transparent;
+  color: var(--primary-text-color-theme-dark);
+        
+  background: #188CE8;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+.contact-form-field-footer {
+  display: flex;
+  align-items: center;
+}
 /*====== end modal window ====== */
 /* ====== end page Студія ====== */
 /* ====== start page Портфоліо ====== */
