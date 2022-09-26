@@ -606,7 +606,7 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .call {
-  display: block;
+  display: inline-block;
   text-align: center;
   margin: 0 auto 12px;
  
@@ -630,7 +630,7 @@ img {
   border-color: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
-.contact-form-input:focus {
+.contact-form-input:focus, .contact-form-message:focus {
   outline: none;
   border-color: var(--accent-color);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -648,6 +648,7 @@ img {
   color: #757575;
 }
 .contact-form-input-wrapper {
+  display: block;
   position: relative;
   margin-bottom: 10px;
 }
@@ -663,6 +664,43 @@ img {
   fill: var(--accent-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.contact-form-message {
+  width: 100%;
+  height: 120px;
+  margin-bottom: 20px;
+  padding: 12px 16px;
+  resize: none;
+
+  border-color: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.contact-form-message::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+.contact-form-checkbox-label {
+  display: flex;
+  align-items: center;
+}
+.contact-form-checkbox-label::before {
+  content: "";
+  display: inline-block;
+  margin-right: 7px;
+  width: 16px;
+  height: 15px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);;
+
+  cursor: pointer;
+  }
+  .contact-form-checkbox:checked + .contact-form-checkbox-label::before {
+    background-image: url("../img/check.svg");
+    
+  }
 /*====== end modal window ====== */
 /* ====== end page Студія ====== */
 /* ====== start page Портфоліо ====== */
