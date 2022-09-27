@@ -469,20 +469,22 @@
             </li>
           </ul>
         </div>
-        <div class="content-wrapper-footer-subscribe">
+        <div class="content-wrapper-footer-subscription">
           <form class="contact-form">
-            <p class="subscribe">Підпишіться на розсилку</p>
-            <label for="mail" class="contact-form-field-footer">
-              <input
-                name="user-email"
-                class="contact-form-input-footer"
-                type="email"
-                id="mail"
-                placeholder="E-mail"
-              />
-            
-            </label>
-            <button type="submit" class="contact-form-submit-btn-footer"></button> 
+            <div><label class="contact-form-field-footer">
+              <span class="subscription">Підпишіться на розсилку</span>
+            </div>
+            <div class="input-wrapper"><input name="user-email"
+              class="contact-form-input-footer"
+              type="email"
+              placeholder="E-mail"
+              autofocus
+              >
+              <span class="contact-form-input-wrapper-footer">
+                <button type="submit" class="submit-btn-footer"><span class="call-footer">Підписатися</span>
+                </button>
+              </span>
+            </div>
           </form>
         </div>
       </div>
