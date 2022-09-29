@@ -778,6 +778,7 @@ img {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+  color: #757575;
 }
 .contact-form-checkbox-label::before {
   content: "";
@@ -787,7 +788,6 @@ img {
   width: 16px;
   height: 15px;
 
-  color: #757575;
   border: 1px solid rgba(33, 33, 33, 0.2);;
 
   cursor: pointer;
